@@ -1,0 +1,1 @@
+# Data Integrity & Cost of Failure: 시장 보고서 요약 (2026년 5월)
