@@ -67,6 +67,74 @@
       "preAlarmsSent": [],
       "evidence": "완료: sessions/2026-05-16T07-49/_report.md\n- 레오: Pain Point 1('시스템 다운 후의 사일런트 실패')에 대한 유튜브 영상의 첫 번째 썸네일 브리프(제목, 핵심 비주얼 컨셉, 타이포그래피\n- Designer: youtube 에이전트가 요청한 썸네일 브리프의 내용을 기반으로, 'Blueprint' 및 '복원력(Resilience)' 컨셉을 극대화하는 최\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 📺 레오 _(Head of YouTube)_\n> 📋 **지시**: Pain Point 1('시스템 다운 후의 사일런트 실패')에 대한 유튜브 영상의 첫 번째 썸네일 브리프(제목, 핵심 비주얼 컨셉, 타이포그래피 가이드라인, 색상 팔레트)를 즉시 작성하여 제공하라.\n> 🔧 **도구 실행**: `my_vi",
       "completedAt": "2026-05-16T07:53:12.794Z"
+    },
+    {
+      "id": "20260516221307-hjvm",
+      "title": "모든 마케팅 에셋(썸네일, 릴스)에서 블루/레드 대비가 명확하게 이루어졌는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-05-16T22:13:07.176Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T22-11",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T22-11/_report.md\n- Designer: Writer가 제시한 '딥 블루와 크림슨 레드' 대비 전략과 Blueprint/Resilience 프레임워크를 기반으로, 실제 영상 제작팀이 즉\n- Instagram: 최종 확정된 시각 가이드라인과 핵심 캐치프레이즈를 적용하여, Streamline 옵션(B) 중심의 릴스 콘텐츠 기획안을 최종 제작 지침으로 확정\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: Writer가 제시한 '딥 블루와 크림슨 레드' 대비 전략과 Blueprint/Resilience 프레임워크를 기반으로, 실제 영상 제작팀이 즉시 사용할 수 있는 최종 디자인 가이드라인 및 운영 매뉴얼을 확정하고 배포할 것.\n> \ud83d",
+      "completedAt": "2026-05-16T22:15:13.974Z"
+    },
+    {
+      "id": "20260516221307-m8jm",
+      "title": "'Blueprint'와 'Resilience'의 개념이 시각적으로 구별되며 연결되어 있는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-05-16T22:13:07.179Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T22-11",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T22-11/_report.md\n- Designer: Writer가 제시한 '딥 블루와 크림슨 레드' 대비 전략과 Blueprint/Resilience 프레임워크를 기반으로, 실제 영상 제작팀이 즉\n- Instagram: 최종 확정된 시각 가이드라인과 핵심 캐치프레이즈를 적용하여, Streamline 옵션(B) 중심의 릴스 콘텐츠 기획안을 최종 제작 지침으로 확정\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: Writer가 제시한 '딥 블루와 크림슨 레드' 대비 전략과 Blueprint/Resilience 프레임워크를 기반으로, 실제 영상 제작팀이 즉시 사용할 수 있는 최종 디자인 가이드라인 및 운영 매뉴얼을 확정하고 배포할 것.\n> \ud83d",
+      "completedAt": "2026-05-16T22:15:13.977Z"
+    },
+    {
+      "id": "20260516221307-1oog",
+      "title": "폰트 계층(헤드라인 > 본문 > CTA)이 일관성 있게 적용되었는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-05-16T22:13:07.181Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T22-11",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T22-11/_report.md\n- Designer: Writer가 제시한 '딥 블루와 크림슨 레드' 대비 전략과 Blueprint/Resilience 프레임워크를 기반으로, 실제 영상 제작팀이 즉\n- Instagram: 최종 확정된 시각 가이드라인과 핵심 캐치프레이즈를 적용하여, Streamline 옵션(B) 중심의 릴스 콘텐츠 기획안을 최종 제작 지침으로 확정\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: Writer가 제시한 '딥 블루와 크림슨 레드' 대비 전략과 Blueprint/Resilience 프레임워크를 기반으로, 실제 영상 제작팀이 즉시 사용할 수 있는 최종 디자인 가이드라인 및 운영 매뉴얼을 확정하고 배포할 것.\n> \ud83d",
+      "completedAt": "2026-05-16T22:15:13.978Z"
+    },
+    {
+      "id": "20260516221307-afce",
+      "title": "최종 결과물이 '권위와 긴급함'이라는 핵심 목표를 동시에 전달하는가?",
+      "description": "자동 등록 (Designer 산출물에서 추출)",
+      "owner": "agent",
+      "agentIds": [
+        "designer"
+      ],
+      "createdAt": "2026-05-16T22:13:07.182Z",
+      "status": "done",
+      "sessionDir": "2026-05-16T22-11",
+      "nudges": 0,
+      "priority": "normal",
+      "preAlarmsSent": [],
+      "evidence": "완료: sessions/2026-05-16T22-11/_report.md\n- Designer: Writer가 제시한 '딥 블루와 크림슨 레드' 대비 전략과 Blueprint/Resilience 프레임워크를 기반으로, 실제 영상 제작팀이 즉\n- Instagram: 최종 확정된 시각 가이드라인과 핵심 캐치프레이즈를 적용하여, Streamline 옵션(B) 중심의 릴스 콘텐츠 기획안을 최종 제작 지침으로 확정\n\nCEO 종합 요점: ## 🗂 작업 라운드 — 누가 뭐 했나\n\n### 🎨 Designer _(Lead Designer)_\n> 📋 **지시**: Writer가 제시한 '딥 블루와 크림슨 레드' 대비 전략과 Blueprint/Resilience 프레임워크를 기반으로, 실제 영상 제작팀이 즉시 사용할 수 있는 최종 디자인 가이드라인 및 운영 매뉴얼을 확정하고 배포할 것.\n> \ud83d",
+      "completedAt": "2026-05-16T22:15:13.979Z"
     }
   ]
 }
