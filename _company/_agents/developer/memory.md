@@ -43,3 +43,6 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-18] Tension-to-Action Conversion Rate($\text{T2A CR}$) 측정을 위한 데이터베이스 스키마와 $\text{POST /api/track\_action}$ API 엔드포인트 명세를 최종적으로 검토하고, 디자인 변수와의 일관성을 확보할 수 있도록 구현 준비 상태를 점검하라. → 산출물 sessions/2026-05-18T08-49/developer.md
 - [2026-05-18] Instagram 실험에서 수집될 Action Log 데이터($T2A CR$ 측정)를 위한 API 엔드포인트 및 DB 스키마의 유효성을 재검토하고, 데이터 수집 파이프라인이 실제 콘텐츠 실행에 맞춰 안정적으로 작동하도록 최종 점검하라. → 산출물 sessions/2026-05-18T09-28/developer.md
 - [2026-05-18] Tension-to-Action Conversion Rate 측정을 위한 데이터베이스 스키마와 API 명세를 기반으로, 행동 로그($Action\_Log$) 및 심리적 긴장감($Session\_Tension$) 데이터를 수집하고 통합할 시스템의 초기 구현 계획을 작성하라. → 산출물 sessions/2026-05-18T11-09/developer.md
+- [2026-05-18] T2A CR 측정을 위한 데이터베이스 스키마와 API 명세를 검토하고, 현재 콘텐츠 제작 단계에서 필요한 최소한의 데이터 추적 기능이 구현되었는지 확인하며, 다음 실행을 위해 기술적 병목 지점을 보고하라. → 산출물 sessions/2026-05-18T12-34/developer.md
+- [2026-05-18] Instagram 및 YouTube 콘텐츠에 대해 코다리가 점검한 행동 로그 수집 파이프라인($\text{POST /api/track\_action}$)이 실제 트래킹 이벤트(Hook 클릭, CTA 전환 등)와 완벽하게 연동되는지 최종 검토하고, 누락된 추적 지점을 보완하는 작업 실행. → 산출물 sessions/2026-05-18T13-16/developer.md
+- [2026-05-18] Tension-to-Action Conversion Rate 측정을 위한 행동 로그 수집 모듈에 대한 자동 테스트 케이스 및 검증 로직을 즉시 구현하고, 데이터 파이프라인의 정확성을 확보할 것. → 산출물 sessions/2026-05-18T13-31/developer.md
