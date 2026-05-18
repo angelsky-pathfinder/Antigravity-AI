@@ -35,3 +35,11 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-17] 시스템 안정성 검증 루프(`developer_pipeline.py`)를 재실행하여 MTTR 로그 및 손실 비용 데이터를 성공적으로 생성하고, 해당 데이터가 저장된 정확한 파일 경로를 확인하여 보고하라. → 산출물 sessions/2026-05-17T10-47/developer.md
 - [2026-05-17] 이전 실행 실패 기록(sessions/2026-05-17T10-47/developer.md, sessions/2026-05-17T10-30/developer.md)을 기반으로 시스템 안정성 검증 루프(`developer_pipeline.py`)를 재실행하여 MTTR 로그 및 손실 비용 데이터를 성공적으로 생성하고 정확한 파일 경로를 확보하라. → 산출물 sessions/2026-05-17T12-14/developer.md
 - [2026-05-17] 시스템 안정성 검증 루프(`developer_pipeline.py`) 실행 시 발생한 파일 경로 오류(`[Errno 2] No such file or directory`)의 원인을 즉시 확인하고, MTTR 및 손실 비용 데이터를 성공적으로 생성할 수 있도록 파일 위치를 수정하여 데이터 생성을 재시도하라. → 산출물 sessions/2026-05-17T12-29/developer.md
+- [2026-05-18] 최종 디자인 요구사항 및 심리적 긴장감(Tension) KPI에 필요한 기술 데이터를 제공할 준비를 하고, 추후 측정 메커니즘 구축을 위한 데이터 통합 구조 설계 초안을 준비하라. → 산출물 sessions/2026-05-18T04-29/developer.md
+- [2026-05-18] 코다리는 데이터 통합 구조(KPI 정의 테이블)를 기반으로, 실제로 Tension-to-Action Conversion Rate를 측정하기 위한 구체적인 시스템 실행 계획 및 측정 메커니즘의 단계별 실행 방안을 수립하라. → 산출물 sessions/2026-05-18T05-15/developer.md
+- [2026-05-18] Tension-to-Action Conversion Rate ($\text{T2A CR}$) 측정 메커니즘(Session_Tension, Action_Log 테이블)에 대한 데이터베이스 스키마와 $\text{POST /api/track\_action}$ API 엔드포인트 명세를 상세하게 작성하라. → 산출물 sessions/2026-05-18T05-54/developer.md
+- [2026-05-18] Tension-to-Action Conversion Rate ($\text{T2A CR}$) 측정을 위한 데이터베이스 스키마(Session_Tension, Action_Log 테이블)와 $\text{POST /api/track\_action}$ API 엔드포인트 명세를 최종적으로 확정하고 코드를 준비하라. → 산출물 sessions/2026-05-18T06-26/developer.md
+- [2026-05-18] Tension-to-Action Conversion Rate ($\text{T2A CR}$) 측정을 위한 데이터베이스 스키마(Session_Tension, Action_Log 테이블)와 $\text{POST /api/track\_action}$ API 엔드포인트 명세를 확정하고 시스템을 구축하라. → 산출물 sessions/2026-05-18T07-01/developer.md
+- [2026-05-18] Tension-to-Action Conversion Rate($\text{T2A CR}$) 측정을 위한 데이터베이스 스키마와 $\text{POST /api/track\_action}$ API 엔드포인트 명세를 최종적으로 검토하고, 디자인 변수와의 일관성을 확보할 수 있도록 구현 준비 상태를 점검하라. → 산출물 sessions/2026-05-18T08-49/developer.md
+- [2026-05-18] Instagram 실험에서 수집될 Action Log 데이터($T2A CR$ 측정)를 위한 API 엔드포인트 및 DB 스키마의 유효성을 재검토하고, 데이터 수집 파이프라인이 실제 콘텐츠 실행에 맞춰 안정적으로 작동하도록 최종 점검하라. → 산출물 sessions/2026-05-18T09-28/developer.md
+- [2026-05-18] Tension-to-Action Conversion Rate 측정을 위한 데이터베이스 스키마와 API 명세를 기반으로, 행동 로그($Action\_Log$) 및 심리적 긴장감($Session\_Tension$) 데이터를 수집하고 통합할 시스템의 초기 구현 계획을 작성하라. → 산출물 sessions/2026-05-18T11-09/developer.md
