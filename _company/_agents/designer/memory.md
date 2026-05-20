@@ -76,3 +76,5 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] business 에이전트가 확정한 'Stability Tiered Pricing Model Specification'을 바탕으로, 데이터 기반 가격 모델의 시각적 구조 초안(Tiered Pricing 레이아웃 및 핵심 시각화 요소)을 설계하라. → 산출물 sessions/2026-05-20T12-03/designer.md
 - [2026-05-20] 시스템 안정성 지표($S$)와 수익(SWRI) 간의 상관관계를 명확히 보여주는 'Blueprint & Resilience' 대시보드에 필요한 핵심 시각화 요소(KPI, 상태 기반 색상)를 구체적으로 설계하고 레이아웃 초안을 작성하라. → 산출물 sessions/2026-05-20T12-54/designer.md
 - [2026-05-20] 코다리가 정의한 모니터링 시스템 요구사항에 맞춰, 'Blueprint & Resilience' 대시보드에 $S$와 $SWRI$ 간의 실시간 상관관계를 명확히 보여주는 시각화 요소를 최종 확정하고 레이아웃을 완성하라. → 산출물 sessions/2026-05-20T15-07/designer.md
+- [2026-05-20] 확정된 시스템 안정성($S$)과 수익($SWRI$) 상관관계를 시각화하는 'Blueprint & Resilience' 대시보드 레이아웃 및 상태 기반 영역 색상 규칙을 기반으로, 가격 조정 로직이 반영될 수 있는 핵심 데이터 시각화 구조 초안을 즉시 설계하라. → 산출물 sessions/2026-05-20T15-22/designer.md
+- [2026-05-20] 시스템 안정성($S$)과 수익($SWRI$) 상관관계를 명확히 시각화하는 'Blueprint & Resilience' 대시보드 레이아웃 및 상태 기반 영역 색상 규칙을 최종 확정하고 디자인 초안을 즉시 작성하라. → 산출물 sessions/2026-05-20T16-33/designer.md
