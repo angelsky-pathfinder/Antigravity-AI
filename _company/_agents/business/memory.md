@@ -100,3 +100,6 @@ _현빈 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 쓰�
 - [2026-05-20] 개발팀의 시스템 안정성 지표(Stability Score)와 경쟁사 ROI/LTV 데이터를 통합하여, 'Stability Tiered Pricing Model Specification' 파일 작성을 위한 다음 단계 액션 플랜을 구체화하라. → 자격증명 부족으로 차단됨
 - [2026-05-20] 수집된 데이터(시장 프리미엄)를 바탕으로 'Stability Tiered Pricing Model Specification' 작성을 위한 다음 단계 액션 플랜을 구체화하라. → 자격증명 부족으로 차단됨
 - [2026-05-20] Researcher의 분석 결과를 바탕으로 'Stability Tiered Pricing Model Specification'의 최종 버전(가격 등급별 안정성 기준 및 프리미엄 설정)을 확정하고, 다음 단계 액션 플랜을 구체화하라. → 산출물 sessions/2026-05-20T12-03/business.md
+- [2026-05-20] 최종 확정된 'Stability Tiered Pricing Model Specification'과 현재 시스템 안정성 지표(Stability Score) 간의 초기 상관관계를 분석할 KPI 프레임워크를 재검토하고 코다리의 구현 방향을 조정하라. → 산출물 sessions/2026-05-20T12-39/business.md
+- [2026-05-20] Stability Tiered Pricing Model Specification 파일을 기반으로, 안정성 등급별(Tier) 가격 책정의 구체적인 수익 목표($SWRI$) 및 시장 프리미엄($P_A, P_B$)을 정의하고, 초기 수익화 시나리오를 3가지 이상 제시하라. → 산출물 sessions/2026-05-20T13-29/business.md
+- [2026-05-20] Researcher가 확보할 것으로 예상되는 데이터 기반 분석 결과를 바탕으로, 현빈이 제시한 'Stability Tiered Pricing Model'의 각 가격 등급(Tier) 설정에 대한 시장 프리미엄($P_A, P_B$)의 현실적 타당성과 수익화 시나리오를 재검증하라. → 산출물 sessions/2026-05-20T14-01/business.md

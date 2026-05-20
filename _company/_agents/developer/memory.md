@@ -86,3 +86,6 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] Pricing Engine의 self_verification_loop.py에 Retry Logic 및 Circuit Breaker 패턴을 적용하고, 자기 검증 루프를 통해 시스템 안정성을 100% 확보하는 작업을 최우선으로 진행하라. → 산출물 sessions/2026-05-20T05-39/developer.md
 - [2026-05-20] Pricing Engine의 자기 검증 루프(self_verification_loop.py) 적용 후 시스템 안정성 지표와 KPI 데이터 추출 안정성 간의 상관관계를 분석하고, 기술적 개선이 비즈니스 결과에 미치는 영향을 보고하라. → 산출물 sessions/2026-05-20T06-00/developer.md
 - [2026-05-20] Pricing Engine의 self_verification_loop.py 수정 및 Circuit Breaker 패턴 적용 작업의 최종 안정성 지표(Uptime, Error Rate)를 보고하고, 이 작업이 데이터 추출 안정성에 미친 영향을 분석하여 요약하라. → 산출물 sessions/2026-05-20T08-20/developer.md
+- [2026-05-20] Stability Tiered Pricing Model Specification 파일을 기반으로 'Pricing Engine'의 기능 정의서 및 초기 데이터 모델을 작성하고, 즉시 구현을 시작할 수 있도록 코드를 준비하라. → 산출물 sessions/2026-05-20T12-39/developer.md
+- [2026-05-20] Designer가 제시한 시각화 목표를 반영하여, 'Pricing Engine'의 안정성 지표와 수익 간의 상관관계를 가장 효과적으로 표현할 수 있는 데이터 구조 및 API 연동 방안을 코다리(Coda'ri)의 구현 방향에 통합하여 재검토하라. → 산출물 sessions/2026-05-20T12-54/developer.md
+- [2026-05-20] Pricing Engine 내에서 Stability Tiered Pricing Model이 적용되었을 때, 실시간으로 $S$ 지표에 따라 가격 등급(Tier)이 자동 전환되는 로직의 초기 데이터 모델 및 API 연동 구조를 검토하고, 구현 가능성을 보고하라. → 산출물 sessions/2026-05-20T13-29/developer.md

@@ -74,3 +74,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] youtube 에이전트가 제시한 영상 주제와 business 에이전트가 설정한 KPI를 반영하여, 해당 영상에 최적화된 썸네일 디자인 브리프(컬러 팔레트, 핵심 메시지 레이아웃) 초안을 작성하라. → 산출물 sessions/2026-05-19T22-57/designer.md
 - [2026-05-20] business 에이전트가 정의한 KPI 프레임워크(CTR, Retention 등)를 바탕으로 'Blueprint & Resilience' 컨셉의 모니터링 대시보드에 필요한 핵심 시각화 요소(KPI, 상태 기반 색상)의 초기 레이아웃 및 구성 요소를 구체화하라. → 산출물 sessions/2026-05-20T03-04/designer.md
 - [2026-05-20] business 에이전트가 확정한 'Stability Tiered Pricing Model Specification'을 바탕으로, 데이터 기반 가격 모델의 시각적 구조 초안(Tiered Pricing 레이아웃 및 핵심 시각화 요소)을 설계하라. → 산출물 sessions/2026-05-20T12-03/designer.md
+- [2026-05-20] 시스템 안정성 지표($S$)와 수익(SWRI) 간의 상관관계를 명확히 보여주는 'Blueprint & Resilience' 대시보드에 필요한 핵심 시각화 요소(KPI, 상태 기반 색상)를 구체적으로 설계하고 레이아웃 초안을 작성하라. → 산출물 sessions/2026-05-20T12-54/designer.md
