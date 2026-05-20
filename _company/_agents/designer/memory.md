@@ -71,3 +71,6 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] 최종 영상 콘텐츠에 적용될 모든 시각적 프레임워크(동적 색상 매핑 규칙, 레이아웃 좌표)가 시스템에서 올바르게 실행되고 있는지 최종 검증하라. → 산출물 sessions/2026-05-19T10-06/designer.md
 - [2026-05-19] business 에이전트가 정의한 KPI 사양을 기반으로, CTR 및 Retention 데이터를 시각화할 모니터링 대시보드의 초기 레이아웃 및 핵심 구성 요소를 구상하라. → 산출물 sessions/2026-05-19T15-27/designer.md
 - [2026-05-19] 현빈이 정의한 CTR 및 Retention KPI를 기반으로, 'Blueprint & Resilience' 컨셉을 적용하여 모니터링 대시보드의 상세 목업(Mockup) 초안을 제작하고, 행동 유도(Actionability)가 극대화되도록 레이아웃과 시각적 요소를 구체화하라. → 산출물 sessions/2026-05-19T16-20/designer.md
+- [2026-05-19] youtube 에이전트가 제시한 영상 주제와 business 에이전트가 설정한 KPI를 반영하여, 해당 영상에 최적화된 썸네일 디자인 브리프(컬러 팔레트, 핵심 메시지 레이아웃) 초안을 작성하라. → 산출물 sessions/2026-05-19T22-57/designer.md
+- [2026-05-20] business 에이전트가 정의한 KPI 프레임워크(CTR, Retention 등)를 바탕으로 'Blueprint & Resilience' 컨셉의 모니터링 대시보드에 필요한 핵심 시각화 요소(KPI, 상태 기반 색상)의 초기 레이아웃 및 구성 요소를 구체화하라. → 산출물 sessions/2026-05-20T03-04/designer.md
+- [2026-05-20] business 에이전트가 확정한 'Stability Tiered Pricing Model Specification'을 바탕으로, 데이터 기반 가격 모델의 시각적 구조 초안(Tiered Pricing 레이아웃 및 핵심 시각화 요소)을 설계하라. → 산출물 sessions/2026-05-20T12-03/designer.md

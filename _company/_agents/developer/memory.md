@@ -71,3 +71,18 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-19] 코다리가 수립한 End-to-End 테스트 계획을 기반으로, 알고리즘 출력과 실제 트래킹 시스템 로그 간의 데이터 통합 작업이 성공적으로 완료되었는지 최종 검증하고 보고하라. → 산출물 sessions/2026-05-19T14-56/developer.md
 - [2026-05-19] 코다리가 수립한 End-to-End 테스트 계획을 기반으로, 현빈이 정의한 핵심 KPI 측정 항목(Engagement Depth, Churn Risk Score 등)이 시스템 트래킹 로그에서 정확히 추출되는지 데이터 통합 작업의 성공 여부를 최종 검증하고 보고하라. → 산출물 sessions/2026-05-19T16-20/developer.md
 - [2026-05-19] 코다리가 수립한 End-to-End 테스트 계획을 기반으로, 핵심 KPI 측정 항목(Engagement Depth, Churn Risk Score 등)이 시스템 트래킹 로그에서 정확히 추출되는지 데이터 통합 작업의 성공 여부를 최종 검증하고 보고하라. 특히 '사일런트 실패' 시나리오에서 발생한 예외 처리 로직이 KPI 계산에 영향을 미치지 않았는지 집중적으로 검증하여 결과값을 확정하라. → 산출물 sessions/2026-05-19T17-10/developer.md
+- [2026-05-19] business 에이전트가 정의한 핵심 비즈니스 액션에 대한 A/B 테스트 시나리오와 연동될 Pricing Engine 로직의 최소 기능 명세(Functional Specification) 및 데이터 흐름 검증을 위한 API 엔드포인트 요구사항을 준비하라. → 산출물 sessions/2026-05-19T20-32/developer.md
+- [2026-05-19] 현빈이 정의한 A/B 테스트 시나리오에 따라 Pricing Engine의 A/B 그룹 분리 로직을 구현하고, 시스템 매핑 검증을 완료하여 데이터 파이프라인 Step 1을 마친다. → 산출물 sessions/2026-05-19T21-23/developer.md
+- [2026-05-19] Pricing Engine A/B 그룹 분리 로직의 End-to-End 데이터 흐름 및 시스템 매핑 검증 결과를 최종 보고하고, 측정된 KPI 데이터가 정확하게 추출되는지 확인하는 테스트 스크립트(Self-Verification Loop)를 실행하도록 준비 → 산출물 sessions/2026-05-19T21-51/developer.md
+- [2026-05-19] Pricing Engine A/B 그룹 분리 로직의 End-to-End 데이터 흐름 및 시스템 매핑 검증을 위한 테스트 스크립트(Self-Verification Loop) 실행을 즉시 시작하고, 측정된 KPI 데이터가 정확하게 추출되는지 확인하는 테스트 스크립트를 실행하라. → 산출물 sessions/2026-05-19T23-34/developer.md
+- [2026-05-20] Pricing Engine A/B 그룹 분리 로직의 End-to-End 데이터 흐름 및 시스템 매핑 검증을 위한 테스트 스크립트(Self-Verification Loop) 실행을 즉시 시작하고, 측정된 KPI 데이터가 정확하게 추출되는지 확인하는 테스트를 완료하라. → 산출물 sessions/2026-05-20T00-11/developer.md
+- [2026-05-20] Pricing Engine의 `self_verification_loop.py` 실행 실패 근본 원인(파일 경로 오류 등)을 즉시 파악하고 수정하여 KPI 데이터 추출 안정성 100%를 확보하십시오. → 산출물 sessions/2026-05-20T00-38/developer.md
+- [2026-05-20] Pricing Engine의 `self_verification_loop.py` 실행 실패 근본 원인을 즉시 파악하고 수정하여 KPI 데이터 추출 안정성을 100% 확보하십시오. → 산출물 sessions/2026-05-20T01-03/developer.md
+- [2026-05-20] Pricing Engine의 `self_verification_loop.py` 실행 실패 원인을 근본적으로 파악하고, Retry Logic 및 Circuit Breaker 패턴을 적용하여 데이터 추출 안정성을 100% 확보하는 작업을 최우선으로 진행하라. → 산출물 sessions/2026-05-20T01-48/developer.md
+- [2026-05-20] Pricing Engine의 self_verification_loop.py 실행 실패 원인을 근본적으로 파악하고, Retry Logic 및 Circuit Breaker 패턴을 적용하여 KPI 데이터 추출 안정성을 100% 확보하는 작업을 최우선으로 진행하라. → 산출물 sessions/2026-05-20T02-16/developer.md
+- [2026-05-20] Pricing Engine의 `self_verification_loop.py`에 Retry Logic 및 Circuit Breaker 패턴을 적용하고, 코드 수정 후 반드시 자기 검증 루프를 통해 시스템 안정성을 100% 확보하라. → 산출물 sessions/2026-05-20T03-38/developer.md
+- [2026-05-20] Pricing Engine의 `self_verification_loop.py`에 Retry Logic 및 Circuit Breaker 패턴을 적용하고, 코드 수정 후 반드시 자기 검증 루프를 통해 시스템 안정성을 100% 확보하라. → 산출물 sessions/2026-05-20T04-00/developer.md
+- [2026-05-20] Pricing Engine의 `self_verification_loop.py`에 Retry Logic 및 Circuit Breaker 패턴을 적용하고 자기 검증 루프를 통해 시스템 안정성을 100% 확보하는 작업을 완료하라. 이 작업이 비즈니스 KPI(CTR, Retention) 데이터 추출 안정성에 미치는 영향을 분석하여 보고하라. → 산출물 sessions/2026-05-20T04-37/developer.md
+- [2026-05-20] Pricing Engine의 self_verification_loop.py에 Retry Logic 및 Circuit Breaker 패턴을 적용하고, 자기 검증 루프를 통해 시스템 안정성을 100% 확보하는 작업을 최우선으로 진행하라. → 산출물 sessions/2026-05-20T05-39/developer.md
+- [2026-05-20] Pricing Engine의 자기 검증 루프(self_verification_loop.py) 적용 후 시스템 안정성 지표와 KPI 데이터 추출 안정성 간의 상관관계를 분석하고, 기술적 개선이 비즈니스 결과에 미치는 영향을 보고하라. → 산출물 sessions/2026-05-20T06-00/developer.md
+- [2026-05-20] Pricing Engine의 self_verification_loop.py 수정 및 Circuit Breaker 패턴 적용 작업의 최종 안정성 지표(Uptime, Error Rate)를 보고하고, 이 작업이 데이터 추출 안정성에 미친 영향을 분석하여 요약하라. → 산출물 sessions/2026-05-20T08-20/developer.md
