@@ -90,3 +90,6 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-20] Designer가 제시한 시각화 목표를 반영하여, 'Pricing Engine'의 안정성 지표와 수익 간의 상관관계를 가장 효과적으로 표현할 수 있는 데이터 구조 및 API 연동 방안을 코다리(Coda'ri)의 구현 방향에 통합하여 재검토하라. → 산출물 sessions/2026-05-20T12-54/developer.md
 - [2026-05-20] Pricing Engine 내에서 Stability Tiered Pricing Model이 적용되었을 때, 실시간으로 $S$ 지표에 따라 가격 등급(Tier)이 자동 전환되는 로직의 초기 데이터 모델 및 API 연동 구조를 검토하고, 구현 가능성을 보고하라. → 산출물 sessions/2026-05-20T13-29/developer.md
 - [2026-05-20] Stability Tiered Pricing Model의 기능 정의서와 초기 데이터 모델을 작성하고, 이를 기반으로 'Pricing Engine' 구현에 필요한 코드를 준비하라. → 산출물 sessions/2026-05-20T14-16/developer.md
+- [2026-05-20] business가 정의한 'Stability Tiered Pricing Model Specification'을 기반으로, 코다리(Coda'ri)의 데이터 모델에 $S$ 지표에 따른 가격 등급 자동 전환 로직($Transition\_Logic$)을 구현하고 테스트할 수 있는 상세 스펙과 API 연동 방안을 확정하라. → 산출물 sessions/2026-05-20T14-31/developer.md
+- [2026-05-20] 시스템 안정성 지표($S$)의 임계값($S_{\min}, S_{\text{mid}}, S_{\max}$)을 정의하기 위한 데이터 분포 분석 계획을 수립하고, 이 임계값을 기반으로 자동 전환 로직($Transition\_Logic$)에 필요한 모니터링 시스템 요구사항을 명세화하라. → 산출물 sessions/2026-05-20T14-46/developer.md
+- [2026-05-20] 현빈이 제시한 초기 가중치 및 전환 로직을 기반으로 $S_{	ext{threshold}}$ 및 $S_{	ext{target}}$ 임계값을 통계적으로 산출하고, 가격 조정 로직($P_A, P_B$) 구현을 위한 코드를 준비하라. → 산출물 sessions/2026-05-20T15-07/developer.md

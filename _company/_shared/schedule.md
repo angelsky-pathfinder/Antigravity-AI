@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 20. 오후 11:19:21_
+_업데이트: 2026. 5. 20. 오후 11:49:42_
 
 ## 📅 사람 일정 (Google Calendar)
 - **2026-05-23 02:00** · 어머님과 점심식사
@@ -18,13 +18,13 @@ _업데이트: 2026. 5. 20. 오후 11:19:21_
 - [2026-05-20] business 에이전트가 확정한 'Stability Tiered Pricing Model Specification'을 바탕으로, 데이터 기반 가격 모델의 시각적 구조 초안(Tiered Pricing 레이아웃 및 핵심 시각화 요소)을 설계하라. → 산출물 sessions/2026-05-20T12-03/designer.md
 - [2026-05-20] 시스템 안정성 지표($S$)와 수익(SWRI) 간의 상관관계를 명확히 보여주는 'Blueprint & Resilience' 대시보드에 필요한 핵심 시각화 요소(KPI, 상태 기반 색상)를 구체적으로 설계하고 레이아웃 초안을 작성하라. → 산출물 sessions/2026-05-20T12-54/designer.md
 ### 💻 코다리
-- [2026-05-20] Designer가 제시한 시각화 목표를 반영하여, 'Pricing Engine'의 안정성 지표와 수익 간의 상관관계를 가장 효과적으로 표현할 수 있는 데이터 구조 및 API 연동 방안을 코다리(Coda'ri)의 구현 방향에 통합하여 재검토하라. → 산출물 sessions/2026-05-20T12-54/developer.md
-- [2026-05-20] Pricing Engine 내에서 Stability Tiered Pricing Model이 적용되었을 때, 실시간으로 $S$ 지표에 따라 가격 등급(Tier)이 자동 전환되는 로직의 초기 데이터 모델 및 API 연동 구조를 검토하고, 구현 가능성을 보고하라. → 산출물 sessions/2026-05-20T13-29/developer.md
 - [2026-05-20] Stability Tiered Pricing Model의 기능 정의서와 초기 데이터 모델을 작성하고, 이를 기반으로 'Pricing Engine' 구현에 필요한 코드를 준비하라. → 산출물 sessions/2026-05-20T14-16/developer.md
+- [2026-05-20] business가 정의한 'Stability Tiered Pricing Model Specification'을 기반으로, 코다리(Coda'ri)의 데이터 모델에 $S$ 지표에 따른 가격 등급 자동 전환 로직($Transition\_Logic$)을 구현하고 테스트할 수 있는 상세 스펙과 API 연동 방안을 확정하라. → 산출물 sessions/2026-05-20T14-31/developer.md
+- [2026-05-20] 시스템 안정성 지표($S$)의 임계값($S_{\min}, S_{\text{mid}}, S_{\max}$)을 정의하기 위한 데이터 분포 분석 계획을 수립하고, 이 임계값을 기반으로 자동 전환 로직($Transition\_Logic$)에 필요한 모니터링 시스템 요구사항을 명세화하라. → 산출물 sessions/2026-05-20T14-46/developer.md
 ### 💼 현빈
-- [2026-05-20] 최종 확정된 'Stability Tiered Pricing Model Specification'과 현재 시스템 안정성 지표(Stability Score) 간의 초기 상관관계를 분석할 KPI 프레임워크를 재검토하고 코다리의 구현 방향을 조정하라. → 산출물 sessions/2026-05-20T12-39/business.md
-- [2026-05-20] Stability Tiered Pricing Model Specification 파일을 기반으로, 안정성 등급별(Tier) 가격 책정의 구체적인 수익 목표($SWRI$) 및 시장 프리미엄($P_A, P_B$)을 정의하고, 초기 수익화 시나리오를 3가지 이상 제시하라. → 산출물 sessions/2026-05-20T13-29/business.md
 - [2026-05-20] Researcher가 확보할 것으로 예상되는 데이터 기반 분석 결과를 바탕으로, 현빈이 제시한 'Stability Tiered Pricing Model'의 각 가격 등급(Tier) 설정에 대한 시장 프리미엄($P_A, P_B$)의 현실적 타당성과 수익화 시나리오를 재검증하라. → 산출물 sessions/2026-05-20T14-01/business.md
+- [2026-05-20] 시스템 안정성($S$) 지표와 경쟁사 ROI/LTV 데이터를 바탕으로, 'Stability Tiered Pricing Model'에 대한 구체적인 가격 등급(Tier)과 시장 프리미엄($P_A, P_B$)을 정의하고 최종 수익화 목표를 설정하라. → 산출물 sessions/2026-05-20T14-31/business.md
+- [2026-05-20] Stability Tiered Pricing Model에 적용할 초기 데이터 가중치(Weighting) 및 수익 목표($P_A, P_B$)에 대한 구체적인 수치를 설정하고 코다리에게 전달할 준비를 하라. → 산출물 sessions/2026-05-20T14-46/business.md
 ### 📱 영숙
 - [2026-05-19] 최종 실행 패키지 정리 및 배포 준비 완료 시점을 확인하고, 다음 작업 일정을 관리하라. → 산출물 sessions/2026-05-19T08-43/secretary.md
 - [2026-05-19] 레오(Leo)에게 편집팀 전달용 최종 실행 패키지 배포 및 업로드 일정 조율을 즉시 시작하라. → 산출물 sessions/2026-05-19T09-17/secretary.md
