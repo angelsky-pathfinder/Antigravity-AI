@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 20. 오후 11:05:35_
+_업데이트: 2026. 5. 20. 오후 11:19:21_
 
 ## 📅 사람 일정 (Google Calendar)
 - **2026-05-23 02:00** · 어머님과 점심식사
@@ -18,9 +18,9 @@ _업데이트: 2026. 5. 20. 오후 11:05:35_
 - [2026-05-20] business 에이전트가 확정한 'Stability Tiered Pricing Model Specification'을 바탕으로, 데이터 기반 가격 모델의 시각적 구조 초안(Tiered Pricing 레이아웃 및 핵심 시각화 요소)을 설계하라. → 산출물 sessions/2026-05-20T12-03/designer.md
 - [2026-05-20] 시스템 안정성 지표($S$)와 수익(SWRI) 간의 상관관계를 명확히 보여주는 'Blueprint & Resilience' 대시보드에 필요한 핵심 시각화 요소(KPI, 상태 기반 색상)를 구체적으로 설계하고 레이아웃 초안을 작성하라. → 산출물 sessions/2026-05-20T12-54/designer.md
 ### 💻 코다리
-- [2026-05-20] Stability Tiered Pricing Model Specification 파일을 기반으로 'Pricing Engine'의 기능 정의서 및 초기 데이터 모델을 작성하고, 즉시 구현을 시작할 수 있도록 코드를 준비하라. → 산출물 sessions/2026-05-20T12-39/developer.md
 - [2026-05-20] Designer가 제시한 시각화 목표를 반영하여, 'Pricing Engine'의 안정성 지표와 수익 간의 상관관계를 가장 효과적으로 표현할 수 있는 데이터 구조 및 API 연동 방안을 코다리(Coda'ri)의 구현 방향에 통합하여 재검토하라. → 산출물 sessions/2026-05-20T12-54/developer.md
 - [2026-05-20] Pricing Engine 내에서 Stability Tiered Pricing Model이 적용되었을 때, 실시간으로 $S$ 지표에 따라 가격 등급(Tier)이 자동 전환되는 로직의 초기 데이터 모델 및 API 연동 구조를 검토하고, 구현 가능성을 보고하라. → 산출물 sessions/2026-05-20T13-29/developer.md
+- [2026-05-20] Stability Tiered Pricing Model의 기능 정의서와 초기 데이터 모델을 작성하고, 이를 기반으로 'Pricing Engine' 구현에 필요한 코드를 준비하라. → 산출물 sessions/2026-05-20T14-16/developer.md
 ### 💼 현빈
 - [2026-05-20] 최종 확정된 'Stability Tiered Pricing Model Specification'과 현재 시스템 안정성 지표(Stability Score) 간의 초기 상관관계를 분석할 KPI 프레임워크를 재검토하고 코다리의 구현 방향을 조정하라. → 산출물 sessions/2026-05-20T12-39/business.md
 - [2026-05-20] Stability Tiered Pricing Model Specification 파일을 기반으로, 안정성 등급별(Tier) 가격 책정의 구체적인 수익 목표($SWRI$) 및 시장 프리미엄($P_A, P_B$)을 정의하고, 초기 수익화 시나리오를 3가지 이상 제시하라. → 산출물 sessions/2026-05-20T13-29/business.md

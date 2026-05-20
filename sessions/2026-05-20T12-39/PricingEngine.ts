@@ -1,131 +1,87 @@
-import { StabilityTieredPricingTable } from './DataModel';
+<![CDATA[
+// PricingEngine.ts - Stability Tiered Pricing Model Implementation
+
+interface PricingContext {
+  basePrice: number;
+  stabilityScore: number; // S 지표 (0~100)
+  marketPremium: number; // P_Market
+}
+
+const TIER_CONFIG = {
+  'Tier 1: Foundation': { minS: 0, maxS: 39.99, marketPremium: 'P_A', swriTarget: 'LTV 최소치 보장 및 CR 극대화.' },
+  'Tier 2: Growth': { minS: 40, maxS: 69.99, marketPremium: 'P_B', swriTarget: 'SWRI 목표 달성 및 LTV 증대.' },
+  'Tier 3: Premium': { minS: 70, maxS: 100, marketPremium: 'P_A + P_B', swriTarget: '마진 극대화 및 안정성($S$)에 대한 직접적인 보상 반영.' },
+};
 
 /**
- * PricingEngine 클래스는 안정성 지표를 기반으로 동적 가격을 계산하고 전환을 제안한다.
+ * Stability Tiered Pricing Model 로직을 기반으로 가격과 등급을 계산합니다.
+ * @param context - 현재 시스템 데이터와 시장 프리미엄 정보
+ * @returns {object} - 계산된 가격, 현재 Tier, 목표 수익화 지표
  */
-export class PricingEngine {
-    private pricingTable: StabilityTieredPricingTable;
+export function calculatePricing(context: PricingContext): { price: number; tier: string; swriTarget: string } {
+  let determinedTier: string;
 
-    constructor(pricingTable: StabilityTieredPricingTable) {
-        this.pricingTable = pricingTable;
-    }
+  // 1. Tier 결정 로직 실행
+  if (context.stabilityScore >= TIER_CONFIG['Tier 3: Premium'].minS) {
+    determinedTier = 'Tier 3: Premium';
+  } else if (context.stabilityScore >= TIER_CONFIG['Tier 2: Growth'].minS) {
+    determinedTier = 'Tier 2: Growth';
+  } else if (context.stabilityScore >= TIER_CONFIG['Tier 1: Foundation'].minS) {
+    determinedTier = 'Tier 1: Foundation';
+  } else {
+    // 안정성 기준 미달 시 에러 또는 최소 Tier 적용
+    determinedTier = 'Error/Suspension';
+  }
 
-    /**
-     * 안정성 및 시장 데이터를 기반으로 권장 가격을 계산한다.
-     * @param stabilityScore 시스템 안정성 점수 (S)
-     * @param swri 수익 가중치 지표 (SWRI)
-     * @param marketData 시장 프리미엄 데이터 (PA, PB)
-     * @returns 권장 가격과 전환 추천 정보 객체
-     */
-    public calculatePrice(stabilityScore: number, swri: number, marketData: { PA: number, PB: number }): { recommendedPrice: number, transitionRecommendation: string, stabilityDelta: number } {
-        if (!this.pricingTable) {
-            throw new Error("Pricing table is not initialized.");
-        }
+  const tierConfig = TIER_CONFIG[determinedTier];
 
-        // 1. 현재 안정성 티어 식별 (실제 구현 시 복잡한 매핑 로직 필요)
-        const currentTier = this.determineTier(stabilityScore);
+  // 2. 가격 계산 (FR2.3 재정비 기반)
+  const f = (s: number) => {
+    if (s >= 100) return 0.5; // 최고 안정성 시 보정 계수 최대화
+    if (s >= 70) return 0.2;
+    if (s >= 40) return 0.1;
+    return 0.0;
+  };
 
-        if (!currentTier) {
-            throw new Error(`Stability score ${stabilityScore} does not map to any defined tier.`);
-        }
+  const finalPrice = (context.basePrice * (1 + f(context.stabilityScore))) * context.marketPremium;
 
-        // 2. FR2.3 기반 가격 계산 (예시 로직)
-        // 실제 FR2.3 공식은 데이터 모델에 따라 복잡하게 정의되어야 함. 여기서는 예시로 단순화.
-        let basePrice = this.calculateBasePrice(currentTier, swri);
+  // 3. 수익화 목표 설정
+  const swriTarget = tierConfig.swriTarget;
 
-        // 3. 시장 프리미엄 적용
-        const marketAdjustment = (marketData.PA + marketData.PB) / 2;
-        let recommendedPrice = basePrice * (1 + marketAdjustment * 0.1); // 10% 조정 예시
-
-        // 4. 자동 상향 전환 시나리오 검증
-        let transitionRecommendation = "No immediate change recommended.";
-        let stabilityDelta = stabilityScore - this.getTargetStability();
-
-        if (stabilityScore > this.getTargetStability()) {
-            const alpha = this.calculateAlpha(stabilityScore, this.getTargetStability());
-            if (swri < 0.9) { // SWRI가 목표치에 미달할 경우 상향을 권장
-                transitionRecommendation = `Stability improved. Recommended price increase by ${alpha * 100}%.`;
-            } else {
-                 transitionRecommendation = "Stability improved, but revenue targets are met.";
-            }
-        }
-
-        return {
-            recommendedPrice: parseFloat(recommendedPrice.toFixed(2)),
-            transitionRecommendation: transitionRecommendation,
-            stabilityDelta: parseFloat(stabilityDelta.toFixed(2))
-        };
-    }
-
-    /**
-     * 내부적으로 안정성 점수를 기반으로 티어를 결정한다 (Placeholder).
-     */
-    private determineTier(score: number): string | null {
-        if (score >= 85) return 'Gold';
-        if (score >= 60) return 'Silver';
-        return 'Bronze';
-    }
-
-    /**
-     * 가격 결정의 기본 기준을 계산한다 (Placeholder).
-     */
-    private calculateBasePrice(tier: string, swri: number): number {
-        // 실제로는 Tier별로 다른 기본 로직 적용
-        if (tier === 'Gold') return 1000;
-        if (tier === 'Silver') return 650;
-        return 300;
-    }
-
-    /**
-     * 목표 안정성 점수를 반환한다.
-     */
-    private getTargetStability(): number {
-        // 이 값은 외부 설정 또는 데이터에서 로드되어야 함.
-        return 80; // 임시 목표치 설정
-    }
-
-    /**
-     * 자동 상향 전환에 사용될 알파 값을 계산한다 (Placeholder).
-     */
-    private calculateAlpha(current: number, target: number): number {
-        // 안정성 개선 정도에 따라 동적으로 조정.
-        return Math.min(0.2, (current - target) / 100); // 최대 20% 상향 제한
-    }
+  return {
+    price: parseFloat(finalPrice.toFixed(2)),
+    tier: determinedTier,
+    swriTarget: swriTarget,
+  };
 }
 
-// --- 테스트 코드 ---
-async function runTest() {
-    console.log("--- Pricing Engine Test Running ---");
+/**
+ * API 연동을 위한 Tier 자동 전환 로직 (외부 호출용)
+ * @param stabilityScore - 현재 시스템 안정성 지표 (S)
+ * @returns {object} - 업데이트 결과 및 권장 사항
+ */
+export function transitionStabilityTier(stabilityScore: number): { success: boolean; newTier: string; recommendedPrice: number } {
+  let determinedTier: string;
 
-    // 1. Data Model 로드 (Mocking for test)
-    const mockTable = {
-        tables: [{
-            id: 'mock-uuid', S: 85, SWRI: 0.95, PA: 1.2, PB: 1.1, Tier: 'Gold', Target_Price_Range: [1000, 1500], Transition_Logic: '{"threshold": 85, "increase_pct": 0.15}'
-        }]
-    };
+  // Tier 결정 로직 재사용
+  if (stabilityScore >= TIER_CONFIG['Tier 3: Premium'].minS) {
+    determinedTier = 'Tier 3: Premium';
+  } else if (stabilityScore >= TIER_CONFIG['Tier 2: Growth'].minS) {
+    determinedTier = 'Tier 2: Growth';
+  } else if (stabilityScore >= TIER_CONFIG['Tier 1: Foundation'].minS) {
+    determinedTier = 'Tier 1: Foundation';
+  } else {
+    return { success: false, newTier: 'Error/Suspension', recommendedPrice: 0 };
+  }
 
-    // 2. 엔진 초기화
-    const engine = new PricingEngine(mockTable.tables[0]);
+  // 가격 재계산 (이때 basePrice와 marketPremium은 외부에서 주입되어야 함. 여기서는 예시로 임의값 사용)
+  const mockContext: PricingContext = { basePrice: 100, stabilityScore: stabilityScore, marketPremium: 'P_A' };
+  const result = calculatePricing(mockContext);
 
-    // 3. 입력 데이터
-    const stabilityScore = 90; // 안정성 높음
-    const swri = 0.85;         // 수익 지표가 목표치 미달 (상향 유도 필요)
-    const marketData = { PA: 1.3, PB: 1.2 };
-
-    console.log(`Input: S=${stabilityScore}, SWRI=${swri}, Market_PA=${marketData.PA}`);
-
-    try {
-        // 4. 가격 계산 실행
-        const result = engine.calculatePrice(stabilityScore, swri, marketData);
-
-        console.log("\n✅ Calculation Result:");
-        console.log(`Recommended Price: $${result.recommendedPrice}`);
-        console.log(`Transition Recommendation: ${result.transitionRecommendation}`);
-        console.log(`Stability Delta (S - Target): ${result.stabilityDelta}`);
-
-    } catch (error) {
-        console.error("❌ Calculation Error:", error.message);
-    }
+  return {
+    success: true,
+    newTier: determinedTier,
+    recommendedPrice: result.price,
+  };
 }
-
-runTest();
+]]>
