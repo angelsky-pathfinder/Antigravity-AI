@@ -1,0 +1,25 @@
+{
+  "simulation_parameters": {
+    "time_period": "Monthly",
+    "target_metric": "SWRI",
+    "stability_priority": "High",
+    "stability_threshold_S": 0.95,
+    "profitability_target_SWRI_min": 1.5
+  },
+  "system_stability_S": {
+    "F_rate_observed": null,       // 실패율 (0.0 ~ 1.0)
+    "MTTR_observed": null,        // 평균 복구 시간 (시간 단위)
+    "Resource_Load_avg": null,    // 평균 리소스 부하 (0.0 ~ 1.0)
+    "S_score": 1.0                // 계산된 시스템 안정성 점수 (최종 결과)
+  },
+  "profitability_SWRI": {
+    "Revenue_actual": 0.0,        // 실제 총 매출
+    "Cost_operational": 0.0,     // 운영 비용
+    "Price_applied_Pmin": null,   // 적용된 단일 가격 (Pmin)
+    "Market_Response_index": null // 시장 반응 지수 (예: 전환율 기반)
+  },
+  "relationships": {
+    "S_to_SWRI_coefficient": 1.2,  // 안정성($S$)이 수익($SWRI$)에 미치는 영향 계수
+    "Cost_sensitivity": 0.8       // 비용 민감도 (비용 변화가 $SWRI$에 미치는 영향)
+  }
+}

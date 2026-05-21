@@ -126,3 +126,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-21] 최근 구현된 Retry Logic 및 Circuit Breaker Pattern을 가격 전략 시뮬레이션 로직에 통합하고, 시스템 안정성($S$)이 최종 가격 결정에 미치는 영향을 검증하는 코드를 수정하라. → 산출물 sessions/2026-05-21T07-50/developer.md
 - [2026-05-21] 파일 경로(`/Users/angelsky/Documents/Antigravity_Workspace/sessions/2026-05-21T06-38/developer.md`)에서 시스템 안정성($S$), 수익 지표($SWRI$), 안정성 임계값($S_{threshold}$)의 정확한 수치를 확보하고 계산을 완료하라. → 산출물 sessions/2026-05-21T08-34/developer.md
 - [2026-05-21] 최적 가격 전략($P_{min} \approx 7.89$)을 기반으로 시스템 안정성 유지를 위한 Retry Logic 및 Circuit Breaker Pattern 구현 코드를 최종 검토하고, 실제 적용 가능한 형태로 완성하라. → 산출물 sessions/2026-05-21T08-49/developer.md
+- [2026-05-21] 최종 결정된 가격 전략($P_{min}$)과 시스템 안정성($S$) 통합 코드를 실제 적용 가능한 형태로 완성하고, 코드 실행 흐름 및 테스트 환경(`run_command`) 준비를 완료하라. → 산출물 sessions/2026-05-21T09-04/developer.md
+- [2026-05-21] 최종 결정된 가격 전략($P_{min}$)과 시스템 안정성($S$) 통합 코드를 기반으로, 실제 시스템 안정성($S$) 및 수익 지표($SWRI$)에 대한 시뮬레이션 결과를 검증하고 코드 실행 흐름을 확정하라. → 산출물 sessions/2026-05-21T09-48/developer.md
