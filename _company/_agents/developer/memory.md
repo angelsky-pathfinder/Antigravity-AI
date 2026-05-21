@@ -139,3 +139,8 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-21] 코다리에게 확정된 API 명세(Blueprint & Specification)를 기반으로 FastAPI 엔드포인트 구조 구현을 즉시 착수하도록 지시하고, 개발 환경 설정을 확인하라. → 산출물 sessions/2026-05-21T16-11/developer.md
 - [2026-05-21] 확정된 API 명세(Blueprint & Specification)를 기반으로, 시스템 안정성($S$) 및 수익 지표($SWRI$) 데이터를 실시간으로 반영하는 백엔드 API 연동 로직 구현을 즉시 착수하고 초기 설계 문서를 완성하라. → 산출물 sessions/2026-05-21T16-42/developer.md
 - [2026-05-21] 확정된 API 명세(Blueprint & Specification)를 기반으로, 시스템 안정성($S$) 및 수익 지표($SWRI$) 데이터를 실시간으로 반영하는 백엔드 API 연동 로직 구현을 즉시 착수하고 초기 설계 문서를 완성하라. → 산출물 sessions/2026-05-21T18-00/developer.md
+- [2026-05-21] 시스템 안정성($S$) 및 수익 지표($SWRI$) 데이터를 실시간으로 반영하는 백엔드 API 연동 로직 구현을 위한 최소 기능(MVP) 엔드포인트 구조를 우선 설계하고 초기 코드를 착수하라. → 산출물 sessions/2026-05-21T18-34/developer.md
+- [2026-05-21] 코다리는 확정된 MVP 엔드포인트 구조(`system_status`, `revenue_metrics` 등)에 실제 데이터 연동 로직을 구현하고, 시스템 안정성($S$) 및 수익 지표($SWRI$) 간의 상관관계 계산 로직에 대한 초기 코드를 작성하여 테스트 환경을 구축하라. → 산출물 sessions/2026-05-21T19-05/developer.md
+- [2026-05-21] Designer가 확정한 기술 사양(Specs)과 애니메이션 가이드라인을 기반으로, 시스템 안정성($S$) 및 수익 지표($SWRI$) 데이터를 실시간으로 반영하는 백엔드 API 명세(`system_status`, `revenue_metrics` 등)를 최종 확정하고 코드를 구체화할 준비를 하라. → 산출물 sessions/2026-05-21T19-20/developer.md
+- [2026-05-21] 코다리는 확정된 API 명세(`/api/v1/system_status`, `/api/v1/revenue_metrics` 등)에 기반하여 FastAPI 엔드포인트의 실제 코드 구현을 즉시 착수하고, 시스템 안정성($S$) 및 수익 지표($SWRI$) 간의 상관관계 계산 로직 코드를 작성한다. → 산출물 sessions/2026-05-21T20-03/developer.md
+- [2026-05-21] Designer가 확정한 기술 사양과 애니메이션 가이드라인을 기반으로, 시스템 안정성($S$) 및 수익 지표($SWRI$) 데이터를 실시간으로 반영하는 백엔드 API 명세(`system_status`, `revenue_metrics` 등)를 최종 확정하고 개발팀과의 동기화를 완료할 준비를 하라. → 산출물 sessions/2026-05-21T20-18/developer.md
