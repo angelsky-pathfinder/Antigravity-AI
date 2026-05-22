@@ -152,3 +152,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] Researcher가 제시한 데이터 소스 목록과 Backend 팀의 데이터 모델 설계를 기반으로, 시스템 안정성($S$) 및 수익 지표($SWRI$)를 연동하기 위한 행동 로그 및 외부 시장 데이터를 실시간으로 수집할 수 있는 초기 데이터 모델 설계를 준비하라. → 산출물 sessions/2026-05-22T01-58/developer.md
 - [2026-05-22] 코다리는 이전에 설계된 데이터 모델(UserEventLog, SystemMetric 등)을 기반으로 시스템 안정성($S$) 및 수익 지표($SWRI$) 연동에 필요한 최종 백엔드 API 명세($FSD$) 작성을 즉시 시작하라. 이때 데이터 흐름과 Circuit Breaker 로직을 명세에 포함해야 한다. → 산출물 sessions/2026-05-22T02-27/developer.md
 - [2026-05-22] SystemStatusResponse 및 MetricQueryRequest에 실제 행동 로그 및 시장 데이터 스키마를 반영하여 API 명세를 최종 업데이트하고, $S$와 $SWRI$ 간의 상관관계 계산 로직과 Circuit Breaker 트리거 조건에 대한 백엔드 구현 명세(Implementation Specification)를 즉시 추가하라. → 산출물 sessions/2026-05-22T02-45/developer.md
+- [2026-05-22] S와 SWRI 기반의 KPI 실시간 측정 대시보드 구현 로직 및 API 명세를 최종 확정하고, Designer가 제시한 시각화 가이드라인에 완벽히 부합하도록 데이터 흐름을 최종 검증하라. → 산출물 sessions/2026-05-22T04-28/developer.md
+- [2026-05-22] Designer가 확정한 $S$와 $SWRI$ 지표를 중심으로, 코다리가 제시한 API 명세($FSD$)의 데이터 구조와 시각화 요구사항이 100% 일치하도록 프론트엔드 구현을 위한 상세 스펙 문서를 작성하고, Circuit Breaker 로직 통합 방안을 포함하여 구현 명세를 최종 확정하라. → 산출물 sessions/2026-05-22T05-00/developer.md
