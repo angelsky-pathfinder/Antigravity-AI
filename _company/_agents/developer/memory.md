@@ -165,3 +165,5 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] Designer가 전달한 최종 UI/UX 사양 문서(`sessions/2026-05-22T11-52/final_uiux_and_animation_spec.md`)를 기반으로, 애니메이션 구현 가능 여부와 기술적 제약사항을 명확히 설명하고 디자인 에셋 제작을 지원할 준비를 완료하라. → 산출물 sessions/2026-05-22T13-08/developer.md
 - [2026-05-22] Designer가 요청한 최종 UI/UX 사양 문서(`sessions/2026-05-22T11-52/final_uiux_and_animation_spec.md`)를 기반으로, 컨셉 B의 긴급한 시각화가 기술적 제약사항(애니메이션 시간 등)을 위반하지 않도록 최종 검토 결과를 즉시 보고하고 디자인 에셋 제작을 지원할 준비를 완료하라. → 산출물 sessions/2026-05-22T14-07/developer.md
 - [2026-05-22] Designer가 요청한 최종 UI/UX 사양 문서(`sessions/2026-05-22T11-52/final_uiux_and_animation_spec.md`)를 기반으로, 컨셉 B의 긴급한 시각화가 기술적 제약사항(애니메이션 시간 등)을 위반하지 않도록 최종 검토 결과를 즉시 반영하여 디자인 에셋 제작을 지원할 준비를 완료하라. → 산출물 sessions/2026-05-22T14-40/developer.md
+- [2026-05-22] Designer가 요청한 최종 UI/UX 사양 문서(`sessions/2026-05-22T11-52/final_uiux_and_animation_spec.md`)와 Designer의 피드백을 바탕으로, $S$와 $SWRI$의 시각적 균형을 완벽히 반영하는 동적 애니메이션 로직 및 기술 제약사항을 최종 명확하게 정의하라. → 산출물 sessions/2026-05-22T15-24/developer.md
+- [2026-05-22] Designer가 제작한 최종 디자인 에셋이 코다리(developer)의 기술적 제약사항($\Delta t$, 색상 대비)을 완벽히 반영했는지 즉시 검증하고, 그 결과를 보고하라. → 산출물 sessions/2026-05-22T15-55/developer.md
