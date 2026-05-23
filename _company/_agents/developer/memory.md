@@ -196,3 +196,11 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-23] 확정된 KPI 카드 데이터 구조(`kpi_card_data_schema_sync.md`)와 시스템 안정성($S$) 원칙을 기반으로 `POST /api/v1/ingest/log` 및 `POST /api/v1/experiment/run` 로직의 구현 및 입력값 검증(400 Bad Request)을 최종적으로 완료하고, 데이터 흐름의 안정성을 확보하세요. → 산출물 sessions/2026-05-23T12-51/developer.md
 - [2026-05-23] Writer와 Business가 확정한 $S$와 $SWRI$ 기반의 가격 전략 모델을 API 백엔드 로직에 통합하는 작업을 시작하며, 특히 POST /api/v1/ingest 및 /experiment 엔드포인트에 시스템 안정성($S$) 검증 로직을 최우선으로 구현할 것. → 산출물 sessions/2026-05-23T13-21/developer.md
 - [2026-05-23] Designer가 확정한 KPI 카드 디자인 시스템(딥 블루/크림슨 레드)과 $S/SWRI$ 대비 원칙에 맞춰, POST /api/v1/ingest 엔드포인트에 입력값 검증(`400 Bad Request`) 로직을 구현하고 데이터 흐름 안정성을 확보하라. → 산출물 sessions/2026-05-23T13-56/developer.md
+- [2026-05-23] 영상 도입부 스크립트 및 시각적 흐름과 연동되는 데이터 추출 로드맵(`instagram_data_extractor.py`)의 기술적 구현을 즉시 시작하여 콘텐츠 제작 흐름에 필요한 데이터 파이프라인 안정성을 확보할 것. → 산출물 sessions/2026-05-23T14-36/developer.md
+- [2026-05-23] Designer가 확정한 KPI 카드 디자인 시스템($S/SWRI$ 대비 시각화)이 API 입력값 검증 로직(POST /api/v1/ingest)에 완벽하게 반영되도록, 데이터 흐름 안정성 확보를 위한 최종 코드 리뷰 및 구현 상태를 점검할 것. → 자격증명 부족으로 차단됨
+- [2026-05-23] Designer가 확정한 KPI 카드 디자인 시스템(Deep Blue/Crimson Red 대비 전략)을 API 입력값 검증 로직(`POST /api/v1/ingest`)에 완벽하게 반영하여 데이터 흐름 안정성을 확보하는 최종 코드 구현 및 통합 테스트를 즉시 시작할 것. → 산출물 sessions/2026-05-23T15-44/developer.md
+- [2026-05-23] Designer가 확정한 KPI 카드 디자인 시스템(Deep Blue/Crimson Red 대비 전략)을 API 입력값 검증 로직(`POST /api/v1/ingest`)에 완벽하게 반영하여 데이터 흐름 안정성을 확보하는 최종 코드 구현 및 통합 테스트를 즉시 시작하고 완료할 것. → 산출물 sessions/2026-05-23T16-33/developer.md
+- [2026-05-23] API 입력값 검증 로직(`POST /api/v1/ingest`)에 KPI 카드 디자인 시스템 원칙(Deep Blue/Crimson Red)을 완벽하게 반영하여 데이터 흐름 안정성을 최종적으로 확보하고, $S$ 지표의 실시간 연동 로직을 완성하라. → 산출물 sessions/2026-05-23T17-08/developer.md
+- [2026-05-23] Designer가 제공한 최종 KPI 카드 디자인 시스템(Deep Blue/Crimson Red)을 API 입력값 검증 로직(`POST /api/v1/ingest`)에 완벽하게 반영하고, $S$ 지표의 실시간 연동 로직을 구현하여 데이터 흐름 안정성을 확보하는 작업을 즉시 시작하고 완료하라. → 산출물 sessions/2026-05-23T17-23/developer.md
+- [2026-05-23] 확정된 비주얼 시퀀스(`youtube.md` 등)와 데이터 추출 로드맵을 기반으로, API 검증 로직($S$)과 연동되는 최종 영상 편집용 컷 리스트 및 스크립트의 기술적 구현 가능성을 점검하고 확정할 것. → 산출물 sessions/2026-05-23T19-11/developer.md
+- [2026-05-23] Designer가 제공한 KPI 카드 디자인 시스템 원칙(Deep Blue/Crimson Red)의 최종 명세와 레이아웃 좌표를 기반으로, API 입력값 검증 로직(`POST /api/v1/ingest`)에 해당 디자인 원칙을 완벽하게 반영하여 데이터 흐름 안정성($S$)을 확보하는 코드를 즉시 구현하고 검증하라. → 산출물 sessions/2026-05-23T20-08/developer.md
