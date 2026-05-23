@@ -173,3 +173,7 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-22] Instagram 데이터 추출 스크립트의 LLM 호출 실패 문제를 해결하기 위한 시스템 안정성($S$) 및 메모리 관련 기술적 제약사항을 검토하고, 데이터 확보를 위한 코드 수정 또는 환경 점검을 즉시 실행하라. → 산출물 sessions/2026-05-22T23-17/developer.md
 - [2026-05-22] Instagram 데이터 추출 스크립트(`instagram_data_extractor.py`)에서 발생한 LLM 호출 실패의 기술적 원인(모델 로드/메모리 부족)을 분석하고, 시스템 안정성($S$)을 보장하기 위한 코드 수정 또는 환경 점검 결과를 즉시 제시할 것. → 산출물 sessions/2026-05-22T23-32/developer.md
 - [2026-05-23] instagram_data_extractor.py에서 발생한 LLM 호출 실패를 완전히 해결하고, 시스템 안정성($S$)을 보장하며 데이터를 추출할 수 있는 최종 실행 스크립트 및 에러 처리 로직을 제시하라. → 산출물 sessions/2026-05-22T23-55/developer.md
+- [2026-05-23] Instagram 데이터 추출 스크립트(`instagram_data_extractor.py`)에서 발생한 LLM 호출 실패 문제를 완전히 해결하여 데이터 확보 시스템 안정성($S$)을 보장하고, 데이터 수집의 연속성을 확보하라. → 산출물 sessions/2026-05-23T02-19/developer.md
+- [2026-05-23] Instagram 참여율 측정 지표를 수집하기 위해, 데이터 추출 스크립트(`instagram_data_extractor.py`)에서 필요한 인스타그램 행동 로그 데이터($D$)의 정확한 필드 정의와 API 연동 방안을 설계하라. → 산출물 sessions/2026-05-23T03-08/developer.md
+- [2026-05-23] Instagram 참여율 측정 지표($S$ vs $SWRI$)를 수집하기 위해, 데이터 추출 스크립트(`instagram_data_extractor.py`)가 필요로 하는 인스타그램 행동 로그 데이터($D$)의 필드 정의와 API 연동 방안을 최종적으로 검토하고, 시스템 안정성($S$)이 확보된 상태에서 데이터를 추출할 수 있도록 로직을 확정한다. → 산출물 sessions/2026-05-23T03-23/developer.md
+- [2026-05-23] Instagram 데이터 추출 스크립트(`instagram_data_extractor.py`)의 시스템 안정성($S$)을 최종적으로 확보하며, 측정된 참여율 지표($EI$)가 정확하게 수집되도록 데이터 추출 로직 및 API 연동 테스트를 즉시 실행하라. → 산출물 sessions/2026-05-23T04-22/developer.md
