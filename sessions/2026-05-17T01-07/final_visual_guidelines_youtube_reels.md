@@ -1,0 +1,1 @@
+# 최종 디자인 실행 가이드라인: Blueprint & Resilience 통합
